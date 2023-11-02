@@ -16,9 +16,6 @@ app = FastAPI(
 async def main():
     return {"message": "Hello Universe!"}
 
-@app.get("/hello/{name}"):
-async def hello_name(name: str):
-    return {"message": f"Hello {name}"}
 
 # Define a POST operation
 @app.post("/submit")
